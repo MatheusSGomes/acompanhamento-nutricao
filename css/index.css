@@ -35,9 +35,11 @@ header .container:before{
 }
 
 .container{
-	width: 60%;
+	max-width: 700px;
+	/* width: 60%; */
 	height: 100%;
 	margin: 0 auto;
+	padding: 0 1.5%;
 }
 
 section{
@@ -46,7 +48,7 @@ section{
 }
 
 section h2{
-	font-size: 3em;
+	font-size: 1.8em;
 	display: block;
 	padding-bottom: .5em;
 	border-bottom: 1px solid #ccc;
@@ -109,11 +111,10 @@ button{
 	color: #fff;
 	background-color:#0c8cd3;
 	border-color: #04324c;
-	width: 20%;
-    display: block;
-    clear: both;
-    margin: 10px 0px;
-
+	/* width: 20%; */
+	display: block;
+	clear: both;
+	margin: 10px 0px;
 }
 
 button:active{
@@ -124,6 +125,7 @@ button:active{
 button[disabled=disabled], button:disabled {
     background-color: gray;
 	border-color: darkgray;
+
 }
 
 .adicionar-paciente{
@@ -134,28 +136,51 @@ button[disabled=disabled], button:disabled {
 	border: 1px solid red;
 }
 
-/* definindo um padrao para quando o paciente for invalido */
-/* isso é uma classe do CSS? */
 .paciente-invalido {
+	color: white;
 	background-color: lightcoral;
+	font-weight: bold;
 }
 
-#mensagem-erro{
+#mensagens-erro {
 	color: red;
+	margin: 10px 0;
 }
 
-.fadeOut{
+#mensagens-erro li {
+	margin-bottom: 5px;
+}
+
+.fadeOut {
 	opacity: 0;
 	transition: 0.5s;
 }
 
-#filtrar-tabela{
-	width: 200px;
-	height: 35px;
-	margin-bottom: 15px;
+.busca {
+	float: right;
+	padding: 15px 0;
 }
 
-.invisivel{
+.busca .rotulo {
+	display: inline;
+}
+
+.busca #busca-paciente {
+	padding: 5px;
+}
+
+.invisivel {
 	display: none;
 }
+
+#mensagens-erro-ajax {
+	color: red;
+	margin: 10px 0;
+}
+
+.item-deletado {
+	background-color: red;
+	color: white;
+}
+
 

@@ -3,8 +3,6 @@
 
 const pacientes = document.querySelectorAll('.paciente')
 
-// console.log(pacientes)
-
 for(let i = 0; i < pacientes.length; i++) {
   const paciente = pacientes[i]
 
@@ -39,9 +37,5 @@ for(let i = 0; i < pacientes.length; i++) {
     const imc = peso / (altura * altura)
     tdImc.textContent = imc.toFixed(2)
   }
-  
 }
-
-
-
 
