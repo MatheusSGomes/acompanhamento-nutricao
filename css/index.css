@@ -35,11 +35,9 @@ header .container:before{
 }
 
 .container{
-	max-width: 700px;
-	/* width: 60%; */
+	width: 60%;
 	height: 100%;
 	margin: 0 auto;
-	padding: 0 1.5%;
 }
 
 section{
@@ -73,3 +71,91 @@ th{
 	font-weight: bold;
 	background-color: #EEE;
 }
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#0c8cd3;
+	border-color: #04324c;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+}
+
+.adicionar-paciente{
+    margin-top: 30px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
+
+/* definindo um padrao para quando o paciente for invalido */
+/* isso é uma classe do CSS? */
+.paciente-invalido {
+	background-color: lightcoral;
+}
+
+#mensagem-erro{
+	color: red;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#filtrar-tabela{
+	width: 200px;
+	height: 35px;
+	margin-bottom: 15px;
+}
+
+.invisivel{
+	display: none;
+}
+

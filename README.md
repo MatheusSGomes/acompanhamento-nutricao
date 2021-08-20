@@ -20,3 +20,4 @@ Muitos nutricionistas usam o papel e caneta para anotar dados do paciente e esse
 - [x] Fazer calculos como IMC e porcentagem de gordura automaticamente.
 
 ## Link no Github Pages:
+https://matheussgomes.github.io/acompanhamento-nutricao/
