@@ -1,6 +1,3 @@
-//  IMC - Massa / (altura * altura)
-// Peso / (Altura em metros * altura em metros)
-
 const pacientes = document.querySelectorAll('.paciente')
 
 for(let i = 0; i < pacientes.length; i++) {
@@ -34,8 +31,16 @@ for(let i = 0; i < pacientes.length; i++) {
   }
   
   if(pesoEhValido && alturaEhValida){
-    const imc = peso / (altura * altura)
-    tdImc.textContent = imc.toFixed(2)
+    const imc = calculaImc(peso, altura)
+    tdImc.textContent = imc
   }
 }
 
+function calculaImc(peso, altura) {
+  //  IMC - Massa / (altura * altura)
+  // Peso / (Altura em metros * altura em metros)
+  let imc = 0;
+  imc = peso / (altura * altura)
+  return imc.toFixed(2)
+
+}
