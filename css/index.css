@@ -142,12 +142,13 @@ button[disabled=disabled], button:disabled {
 	font-weight: bold;
 }
 
-#mensagens-erro {
+#mensagens-erros {
 	color: red;
 	margin: 10px 0;
 }
 
-#mensagens-erro li {
+
+#mensagens-erros li {
 	margin-bottom: 5px;
 }
 
