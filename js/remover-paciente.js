@@ -1,9 +1,8 @@
-const pacientesTr = document.querySelectorAll('.paciente')
+const tabela = document.querySelector('table')
 
-// console.log(pacientesTr)
-
-pacientesTr.forEach(function(paciente) {
-  paciente.addEventListener('dblclick', function (event) { 
-    this.remove()
-  })
+tabela.addEventListener('dblclick', function(event) {
+  event.target.parentNode.classList.add('fadeOut')
+  setTimeout(() => {
+    event.target.parentNode.remove()
+  }, 300)
 })
