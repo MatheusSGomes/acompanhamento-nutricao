@@ -15,9 +15,15 @@ A ideia desse aplicativo é facilitar a vida dos nutricionistas melhorando o aco
 Muitos nutricionistas usam o papel e caneta para anotar dados do paciente e esse pequeno app ajuda no cálculo de dietas e no acompanhamento nutricional.
 
 ## Esse sistema vai permitir:
-- [x] Adicionar novos pacientes dinamicamente. 
+- [x] Adicionar novos pacientes dinamicamente.
+- [x] Remover pacientes com duplo clique.
+- [x] Validar se campos de altura e peso são valores válidos.
 - [x] Filtrar a tabela com pacientes.
 - [x] Fazer calculos como IMC e porcentagem de gordura automaticamente.
+- [x] Buscar em uma API uma lista de novos pacientes.
 
 ## Link no Github Pages:
 https://matheussgomes.github.io/acompanhamento-nutricao/
+
+## Imagem do projeto
+![Acompanhamento para Nutricionistas](./screencapture.png)
